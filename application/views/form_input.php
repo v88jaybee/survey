@@ -3,19 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CodeIgniter Survey Form</title>
+	<link rel="stylesheet" style ="text/css" href="<?= base_url('assets/css/survey.css') ?>">
 </head>
 <body>
+
+
+	<form action="<?= base_url('surveys/process_form') ?>" method="post" class="input_data_form">
 <?php 
 		if(function_exists('validation_errors') && validation_errors() != '')
 		{	?>
-		 <p> <?=  validation_errors() ?> </p>
+		 <p class="errors"> <?=  validation_errors() ?> </p>
 <?php	
 		}	?>
 
-	<form action="<?= base_url('surveys/process_form') ?>" method="post">
 		<div>
-			<label for="">Your Name is : </label>
-			<input type="text"  name="name">
+			<label for="">Your Name : </label>
+			<input type="text" name="name">
 		</div>
 
 		<div>

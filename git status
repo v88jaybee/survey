@@ -1,0 +1,5 @@
+[33mcommit bd14f73d99b6f922c4d132c6472e59de090cbe73[m
+Author: Jaybee <jbalog@village88.com>
+Date:   Mon Dec 1 11:29:36 2014 +0800
+
+    First Commit: Add html form, form validation, set post data and session data using flash data

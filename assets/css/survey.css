@@ -1,0 +1,92 @@
+*{
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/*FORM_INPUT*/
+
+.input_data_form{
+	margin: 50px auto;
+	width: 500px;
+	padding: 20px;
+	border: 1px solid black;
+
+	font-weight: bold;
+}
+
+	.input_data_form div label{
+		display: inline-block;
+		vertical-align: top;
+		width: 200px;
+		margin-bottom: 20px;
+		margin-right:10px;	
+	}
+
+	.input_data_form div input[type="text"]{
+		width: 260px;
+		padding: 4px 8px;
+	}
+
+	.input_data_form div select{
+		width: 280px;
+		padding: 4px 8px;
+	}
+
+	.input_data_form div textarea{
+		width: 261px;
+		height: 100px;
+		padding: 4px 8px;
+		min-width: 261px;
+		max-width: 261px;
+	}
+
+	.input_data_form input[type="submit"]{
+		width: 493px;
+		padding: 4px 8px;
+		margin-top: 20px;
+	}
+
+
+/*FORM_DISPLAY*/
+.top_text{
+	border: 1px solid black;
+	margin: 10px auto;
+	width: 480px;
+	padding: 30px;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+	.counter{
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+
+#result_box{
+	border: 1px solid black;
+	margin: 10px auto;
+	width: 500px;	
+	padding: 20px;
+}
+
+	#result_box label{
+		display: inline-block;
+		margin-left: 35px;
+		margin-bottom: 15px;
+		width: 200px;
+		margin-right: 20px;
+		vertical-align: top;
+	}
+
+	#result_box p{
+		display: inline;
+		word-wrap: break-word;
+		margin-bottom: 15px;
+		width: 180px;
+	}
+
+	a{
+		display: block;
+		text-align: right; 
+		text-decoration: none;
+		color: blue;
+	}

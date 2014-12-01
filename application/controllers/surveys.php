@@ -23,19 +23,16 @@ class Surveys extends CI_Controller {
 			$form_data = $this->input->post();
 			$this->session->set_flashdata('data',$form_data);
 
-			if($this->session->set_userdata('count') === TRUE)
-			{
-				$this->session->set_userdata('count') = $this->session->set_userdata('count') + 1;
-			}
+			$counter = $this->session->userdata('count');
+
+			if($counter === FALSE)
+				$counter = 1;
 			else
-			{
-				$this->session->set_userdata('count',1);
-			}
+				$counter++;
+			// $counter = ($counter === FALSE) ? 1 : $counter++;
 
-
-
+			$this->session->set_userdata('count',$counter);
 			
-
 			redirect('result');
 		}
 	}
